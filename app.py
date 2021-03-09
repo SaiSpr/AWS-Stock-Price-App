@@ -30,10 +30,11 @@ name = tickerData.info['longName']
 st.header('**%s**' % name)
 
 sector = tickerData.info['sector']
-st.subheader(sector)
+s=st.subheader('Sector=')
+st.subheader(s,sector)
 
 country = tickerData.info['country']
-st.subheader('Sector=' sector)
+st.subheader(sector)
 
 website = tickerData.info['website']
 st.subheader(sector)
