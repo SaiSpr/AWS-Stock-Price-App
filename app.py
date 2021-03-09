@@ -31,7 +31,7 @@ st.header('**%s**' % name)
 
 sector = tickerData.info['sector']
 s=st.subheader('Sector=')
-st.write(s,sector)
+st.write(sector)
 
 country = tickerData.info['country']
 st.subheader(country)
