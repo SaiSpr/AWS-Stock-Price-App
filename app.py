@@ -33,7 +33,7 @@ sector = tickerData.info['sector']
 st.subheader(sector)
 
 summary = tickerData.info['longBusinessSummary']
-st.txt(summary)
+st.info(summary)
 
 # Ticker data
 st.header('**Ticker data**')
