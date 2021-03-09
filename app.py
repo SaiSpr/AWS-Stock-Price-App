@@ -29,7 +29,7 @@ st.markdown(logo, unsafe_allow_html=True)
 name = tickerData.info['longName']
 st.header('**%s**' % name)
 
-sector = tickerData.info('sector')
+sector = tickerData.info['sector']
 st.info(sector)
 
 summary = tickerData.info['longBusinessSummary']
