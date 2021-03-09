@@ -6,8 +6,7 @@ import datetime
 
 # App title
 st.markdown('''
-# Stock Price App
-Shown are the stock price data for query companies!
+# AWS Stock Price App Demo
 ''')
 st.write('---')
 
@@ -44,8 +43,6 @@ st.info(summary)
 # Ticker data
 st.header('**Ticker data**')
 st.write(tickerDf)
-
-st.write(tickerData.info)
 
 # Bollinger bands
 st.header('**Bollinger Bands**')
