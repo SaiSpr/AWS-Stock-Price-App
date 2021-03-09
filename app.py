@@ -23,14 +23,17 @@ tickerData = yf.Ticker(tickerSymbol) # Get ticker data
 tickerDf = tickerData.history(period='1d', start=start_date, end=end_date) #get the historical prices for this ticker
 
 # Ticker information
-string_logo = '<img src=%s>' % tickerData.info['logo_url']
-st.markdown(string_logo, unsafe_allow_html=True)
+logo = '<img src=%s>' % tickerData.info['logo_url']
+st.markdown(logo, unsafe_allow_html=True)
 
-string_name = tickerData.info['longName']
-st.header('**%s**' % string_name)
+name = tickerData.info['longName']
+st.header('**%s**' % name)
 
-string_summary = tickerData.info['longBusinessSummary']
-st.info(string_summary)
+sector = tickerData.info('sector')
+st.info(sector)
+
+summary = tickerData.info['longBusinessSummary']
+st.info(summary)
 
 # Ticker data
 st.header('**Ticker data**')
