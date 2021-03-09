@@ -6,10 +6,8 @@ import cufflinks as cf
 import datetime
 
 # App title
-st.markdown('''
-# AWS Stock Price App
-''')
-st.write('---')
+st.markdown('''# AWS Stock Price App''')
+
 
 # Sidebar
 st.sidebar.subheader('Query parameters')
