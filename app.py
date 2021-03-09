@@ -7,7 +7,7 @@ import datetime
 
 # App title
 st.markdown('''# AWS Stock Price App''')
-
+st.write('---')
 
 # Sidebar
 st.sidebar.subheader('Query parameters')
