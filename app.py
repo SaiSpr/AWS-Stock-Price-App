@@ -6,7 +6,7 @@ import datetime
 
 # App title
 st.markdown('''
-# AWS Stock Price App Demo
+# AWS Stock Price App
 ''')
 st.write('---')
 
