@@ -32,6 +32,12 @@ st.header('**%s**' % name)
 sector = tickerData.info['sector']
 st.subheader(sector)
 
+country = tickerData.info['country']
+st.subheader("Sector=",sector)
+
+website = tickerData.info['website']
+st.subheader(sector)
+
 summary = tickerData.info['longBusinessSummary']
 st.info(summary)
 
