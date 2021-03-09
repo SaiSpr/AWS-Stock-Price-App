@@ -30,7 +30,7 @@ name = tickerData.info['longName']
 st.header('**%s**' % name)
 
 sector = tickerData.info['sector']
-st.info(sector)
+st.subheader(sector)
 
 summary = tickerData.info['longBusinessSummary']
 st.txt(summary)
