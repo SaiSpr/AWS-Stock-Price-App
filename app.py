@@ -8,10 +8,6 @@ import datetime
 st.markdown('''
 # Stock Price App
 Shown are the stock price data for query companies!
-
-**Credits**
-- App built by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
-- Built in `Python` using `streamlit`,`yfinance`, `cufflinks`, `pandas` and `datetime`
 ''')
 st.write('---')
 
@@ -40,6 +36,8 @@ st.info(string_summary)
 st.header('**Ticker data**')
 st.write(tickerDf)
 
+st.write(tickerData.info)
+
 # Bollinger bands
 st.header('**Bollinger Bands**')
 qf=cf.QuantFig(tickerDf,title='First Quant Figure',legend='top',name='GS')
@@ -47,6 +45,12 @@ qf.add_bollinger_bands()
 fig = qf.iplot(asFigure=True)
 st.plotly_chart(fig)
 
+st.markdown('''
+
+**Credits**
+- App built by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
+- Built in `Python` using `streamlit`,`yfinance`, `cufflinks`, `pandas` and `datetime`
+''')
 ####
 #st.write('---')
 #st.write(tickerData.info)
