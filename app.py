@@ -54,12 +54,4 @@ qf.add_bollinger_bands()
 fig = qf.iplot(asFigure=True)
 st.plotly_chart(fig)
 
-st.markdown('''
 
-**Credits**
-- App built by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
-- Built in `Python` using `streamlit`,`yfinance`, `cufflinks`, `pandas` and `datetime`
-''')
-####
-#st.write('---')
-#st.write(tickerData.info)
