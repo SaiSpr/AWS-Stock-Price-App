@@ -34,10 +34,10 @@ s=st.subheader('Sector=')
 st.write(s,sector)
 
 country = tickerData.info['country']
-st.subheader(sector)
+st.subheader(country)
 
 website = tickerData.info['website']
-st.subheader(sector)
+st.subheader(website)
 
 summary = tickerData.info['longBusinessSummary']
 st.info(summary)
