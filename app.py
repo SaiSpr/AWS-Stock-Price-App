@@ -33,7 +33,7 @@ sector = tickerData.info['sector']
 st.subheader(sector)
 
 country = tickerData.info['country']
-st.subheader('**Sector=**' % sector)
+st.subheader('Sector=' sector)
 
 website = tickerData.info['website']
 st.subheader(sector)
