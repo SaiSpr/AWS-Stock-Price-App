@@ -39,10 +39,6 @@ st.subheader(website)
 summary = tickerData.info['longBusinessSummary']
 st.info(summary)
 
-# Ticker data
-st.header('**Ticker data**')
-st.write(tickerDf)
-
 # Market Price
 regularMarketPrice = tickerData.info['regularMarketPrice']
 st.subheader('**Regular Market Price**')
@@ -52,6 +48,10 @@ st.write(regularMarketPrice)
 profitMargins = tickerData.info['profitMargins']
 st.subheader('**Profit Margins**')
 st.write(profitMargins)
+
+# Ticker data
+st.header('**Ticker data**')
+st.write(tickerDf)
 
 # Other Recommendations
 st.subheader('**Recommendations**')
