@@ -52,5 +52,5 @@ st.plotly_chart(fig)
 
 st.markdown('''
 **Credits**
-- Chanin Nantasenamat aka Data Professor
+- Chanin Nantasenamat
 ''')
