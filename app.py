@@ -19,7 +19,7 @@ ticker_list = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and
 tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list) # Select ticker symbol
 tickerData = yf.Ticker(tickerSymbol) # Get ticker data
 tickerDf = tickerData.history(period='1d', start=start_date, end=end_date) #get the historical prices for this ticker
-#tickerc = tickerData.earnings()
+
 # Ticker information
 logo = '<img src=%s>' % tickerData.info['logo_url']
 st.markdown(logo, unsafe_allow_html=True)
@@ -43,28 +43,30 @@ st.info(summary)
 st.header('**Ticker data**')
 st.write(tickerDf)
 
+# Market Price
 regularMarketPrice = tickerData.info['regularMarketPrice']
 st.subheader('**Regular Market Price**')
 st.write(regularMarketPrice)
 
+# Profit Margins
 profitMargins = tickerData.info['profitMargins']
 st.subheader('**Profit Margins**')
 st.write(profitMargins)
 
+# Other Recommendations
 st.subheader('**Recommendations**')
 st.write(tickerData.recommendations)
-#st.write(tickerData.profitMargins)
+
+# Major Holders
 st.subheader('**Major Holders**')
 st.write(tickerData.major_holders)
-#st.write(tickerData.financials)
-#st.write(tickerData.info)
-#st.write(tickerData.options)
 
+# Company Sustainability
 st.subheader('**Sustainability**')
 st.write(tickerData.sustainability)
 
 
-# Bollinger bands
+# Bollinger Bands
 st.header('**Bollinger Bands**')
 qf=cf.QuantFig(tickerDf,title='First Quant Figure',legend='top',name='GS')
 qf.add_bollinger_bands()
