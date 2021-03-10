@@ -44,13 +44,23 @@ st.header('**Ticker data**')
 st.write(tickerDf)
 
 regularMarketPrice = tickerData.info['regularMarketPrice']
+st.subheader('**Regular Market Price**')
 st.write(regularMarketPrice)
+
+profitMargins = tickerData.info['profitMargins']
+st.subheader('**Profit Margins**')
+st.write(profitMargins)
+
+regularMarketPrice = tickerData.info['regularMarketPrice']
 st.write(tickerData.recommendations)
-#st.write(tickerData.balance_sheet)
+#st.write(tickerData.profitMargins)
+st.subheader('**Major Holders**')
 st.write(tickerData.major_holders)
 #st.write(tickerData.financials)
-st.write(tickerData.info)
+#st.write(tickerData.info)
 #st.write(tickerData.options)
+
+st.subheader('**Sustainability**')
 st.write(tickerData.sustainability)
 
 
