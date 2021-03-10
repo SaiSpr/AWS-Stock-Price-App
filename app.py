@@ -49,7 +49,7 @@ st.write(tickerData.recommendations)
 #st.write(tickerData.balance_sheet)
 st.write(tickerData.major_holders)
 #st.write(tickerData.financials)
-#st.write(tickerData.info)
+st.write(tickerData.info)
 #st.write(tickerData.options)
 st.write(tickerData.sustainability)
 
