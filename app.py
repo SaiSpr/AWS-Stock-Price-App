@@ -51,7 +51,7 @@ profitMargins = tickerData.info['profitMargins']
 st.subheader('**Profit Margins**')
 st.write(profitMargins)
 
-regularMarketPrice = tickerData.info['regularMarketPrice']
+st.subheader('**Recommendations**')
 st.write(tickerData.recommendations)
 #st.write(tickerData.profitMargins)
 st.subheader('**Major Holders**')
