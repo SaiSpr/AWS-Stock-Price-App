@@ -43,6 +43,7 @@ st.info(summary)
 st.header('**Ticker data**')
 st.write(tickerDf)
 
+regularMarketPrice = tickerData.info['regularMarketPrice']
 st.write(tickerData.regularMarketPrice)
 st.write(tickerData.recommendations)
 #st.write(tickerData.balance_sheet)
