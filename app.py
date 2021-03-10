@@ -50,7 +50,7 @@ st.subheader('**Profit Margins**')
 st.write(profitMargins)
 
 # Ticker data
-st.header('**Ticker data**')
+st.subheader('**Ticker data**')
 st.write(tickerDf)
 
 # Other Recommendations
