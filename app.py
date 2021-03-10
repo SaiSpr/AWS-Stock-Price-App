@@ -41,9 +41,9 @@ st.info(summary)
 
 # Ticker data
 st.header('**Ticker data**')
-st.write(tickerData.earnings)
+st.write(tickerDf)
 
-st.write(tickerc)
+st.write(tickerData.earnings)
 
 # Bollinger bands
 st.header('**Bollinger Bands**')
