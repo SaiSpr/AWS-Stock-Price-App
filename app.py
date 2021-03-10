@@ -19,7 +19,7 @@ ticker_list = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and
 tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list) # Select ticker symbol
 tickerData = yf.Ticker(tickerSymbol) # Get ticker data
 tickerDf = tickerData.history(period='1d', start=start_date, end=end_date) #get the historical prices for this ticker
-tickerc = tickerData.earnings()
+#tickerc = tickerData.earnings()
 # Ticker information
 logo = '<img src=%s>' % tickerData.info['logo_url']
 st.markdown(logo, unsafe_allow_html=True)
@@ -41,7 +41,7 @@ st.info(summary)
 
 # Ticker data
 st.header('**Ticker data**')
-st.write(tickerDf)
+st.write(tickerData.earnings)
 
 st.write(tickerc)
 
