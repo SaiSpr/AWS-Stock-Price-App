@@ -73,7 +73,4 @@ qf.add_bollinger_bands()
 fig = qf.iplot(asFigure=True)
 st.plotly_chart(fig)
 
-st.markdown(''' 
-**Credits**
-- Chanin Nantasenamat
-''')
+
