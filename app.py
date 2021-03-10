@@ -6,7 +6,7 @@ import cufflinks as cf
 import datetime
 
 # App title
-st.markdown('''# AWS Stock Price App''')
+st.markdown('''# Stock Market Report'')
 st.write('---')
 
 # Sidebar
