@@ -12,7 +12,7 @@ st.write('---')
 # Sidebar
 st.sidebar.subheader('Date & Stock Listings')
 start_date = st.sidebar.date_input("Start date", datetime.date(2019, 1, 1))
-end_date = st.sidebar.date_input("End date", datetime.date(2021, 1, 31))
+end_date = st.sidebar.date_input("End date", datetime.date(2021, 3, 1))
 
 # Retrieving tickers data
 ticker_list = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and-p-500-companies/master/data/constituents_symbols.txt')
